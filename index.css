@@ -3,32 +3,110 @@ body, html {
     margin: 0;
     padding: 0;
 }
-.parallax {
-    /* Full height */
-    height: 100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.bg-1, .bg-2, .bg-3, .bg-4 {
+  position: relative;
+  /* opacity: 0.75; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-1 {
+  background-image: url("https://images.pexels.com/photos/219000/pexels-photo-219000.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb");
+  min-height: 100%;
 }
 
-.bg01 {
-  background-image: url('https://images.pexels.com/photos/219000/pexels-photo-219000.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb');
+.bg-2 {
+  background-image: url('https://i.ytimg.com/vi/7hgI7spOMAQ/maxresdefault.jpg');
+  min-height: 100%;
+  opacity: 0.8;
 }
 
-.bg02 {
-  background-image: url('https://images4.alphacoders.com/289/thumb-1920-289526.jpg');
+.bg-3 {
+  background-image: url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-384450.jpg');
+  min-height: 100%;
+  opacity: 0.8;
+}
+.bg-4 {
+  background-image: url('https://i.ytimg.com/vi/isFSqYWc9og/maxresdefault.jpg');
+  min-height: 100%;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
 }
 
-.bg03 {
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShBn7Q8wRQ_eov5-1C8EEiCB0x4CfdX4yjP3LZdhqx93YcN-dC');
+.border {
+  padding: 18px;
+  letter-spacing: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
 }
+
+.border-part-1 {
+  background-color: rgba(0, 0, 0, 0.67);
+  color: #fff;
+}
+
+.border-part-2 {
+  background-color:transparent;
+  color: #f7f7f7;
+}
+
+/* colour block text */
+
 .info {
-   height: 1000px;
-   background-color: hotpink;
-   font-size: 36px;
-   text-align: center;
-   /* vertical-align: middle; */
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
 }
-h1, h2, p { margin: 0;}
+
+.info h3 {
+  text-align:center;
+  letter-spacing: 3px;
+  font: 20px sans-serif;
+  color: #111;
+}
+
+.info p {
+  font: 18px sans-serif;
+  line-height: 150%;
+}
+
+.info-part-1 {
+  color: black;
+  background-color: #F1948A;
+}
+
+.info-part-2 {
+  color: black;
+  background-color: #F9E79F;
+}
+
+.info-part-3 {
+  color: black;
+  background-color: #AEB6BF;
+}
+
+.info-footer {
+  text-align:right;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 5px 0px;
+}
+
+h5 {
+  margin-right: 20px;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  text-transform: uppercase ;
+}
