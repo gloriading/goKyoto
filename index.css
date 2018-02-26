@@ -29,7 +29,7 @@ body, html {
 }
 
 .bg-3 {
-  background-image: url('https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-384450.jpg');
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Kiyomizu.jpg/1200px-Kiyomizu.jpg');
   min-height: 100%;
   opacity: 0.8;
 }
@@ -97,7 +97,7 @@ body, html {
 
 .info-part-3 {
   color: black;
-  background-color: #AEB6BF;
+  background-color: #A9DFBF;
 }
 
 .info-footer {
@@ -183,8 +183,9 @@ h5 {
   justify-content: space-between;
 }
 .icon {
-    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
-    transition: width 2s, height 2s, transform 1s;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 1s;
+  transition: width 2s, height 2s, transform 1s;
+  cursor: pointer;
 }
 .icon:hover {
   width: 1.5em;
@@ -192,5 +193,40 @@ h5 {
   -webkit-transform: rotate(360deg); /* Safari */
   transform: rotate(360deg);
 }
+
+.intro-blocks {
+  position: relative;
+  display: inline-block;
+}
+.intro-blocks p {
+  font-size: 0.5em;
+  margin: 0;
+}
+
+#intro-time #tooltip-time,
+#intro-access #tooltip-access,
+#intro-fee #tooltip-fee
+ {
+  visibility: hidden;
+  width: 600px;
+  background-color: lightgray;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 100%;
+}
+
+#intro-time:hover #tooltip-time,
+#intro-access:hover #tooltip-access,
+#intro-fee:hover #tooltip-fee
+ {
+  visibility: visible;
+}
+
+
 
 /* https://kyoto.travel/en/shrine_temple/180 */
