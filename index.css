@@ -227,6 +227,56 @@ h5 {
   visibility: visible;
 }
 
+/* card flip */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 50px;
+  position: relative;
+  perspective: 800px;
+}
+
+#card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+#card div {
+  margin: 0;
+  padding-top: 10px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+#card .front {
+  color: black;
+  font-size: 1.2em;
+  background: rgba(255,255,255, 0.5);
+}
+
+#card .back {
+  color: white;
+  font-size: 1.2em;
+  background: rgba(0,0,0, 0.5);
+  transform: rotateX( 180deg );
+}
+
+#card {
+  animation: flipping 10s infinite linear;
+}
+@keyframes flipping {
+		0% { transform: rotateX(0deg); }
+		50% { transform: rotateX(180deg); }
+    100% { transform: rotateX(0deg); }
+}
+
 
 
 /* https://kyoto.travel/en/shrine_temple/180 */
