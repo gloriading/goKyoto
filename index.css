@@ -107,23 +107,22 @@ body, html {
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
-  padding: 5px 0px;
+  padding: 15px 0px;
 }
-
-h5 {
+.info-footer span {
   margin-right: 20px;
-  margin-bottom: 5px;
+  font-size: 0.7em;
+  text-transform: uppercase;
   letter-spacing: 2px;
-  text-transform: uppercase ;
 }
 
 .links {
   margin-right: 20px;
-  font-size: 20px;
 }
 
 .links a {
   text-decoration: none;
+  font-size: 2em;
   color: white !important;
 }
 
