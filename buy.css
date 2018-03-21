@@ -1,0 +1,138 @@
+body, html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+* {
+  font-family: inherit;
+}
+/* Nav */
+
+.topnav {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px whitesmoke solid;
+}
+
+.topnav .nav-brand span{
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 2px
+
+}
+
+.topnav .nav-links a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.topnav .nav-links a:hover {
+  color: black;
+}
+
+.topnav .nav-links a.active {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.2em;
+}
+
+/* footer */
+.info-footer {
+  text-align:right;
+  position: absolute;
+  z-index: 999;
+  bottom: 0;
+  background: #757575;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 15px 0px;
+}
+
+.info-footer span {
+  margin-right: 20px;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.links {
+  margin-right: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white !important;
+}
+
+.bg-buy {
+  background-color: #212121;
+}
+
+.panels {
+  min-height: 82vh;
+  overflow: hidden;
+  display: flex;
+}
+.panel {
+  border: 1px dashed white;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  transition:
+  font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+  flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+  background 0.2s;
+  font-size: 20px;
+  background-size:cover;
+  background-position:center;
+
+}
+.panel a {
+  text-decoration: none;
+  color: #00BCD4;
+}
+.panel a:hover {
+  text-shadow: 0 0 2px white;
+}
+.panel > * {
+  margin:0;
+  width: 100%;
+  transition:transform 0.5s;
+  flex: 1 0 auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel1 {
+  background-color: #FBC02D;
+/*background-image:url();*/
+}
+.panel2 {
+  background-color: #536DFE;
+  /*background-image:url();*/
+}
+.panel3 {
+  background-color: #5D4037;
+  /* background-image:url(); */
+}
+.panel4 {
+  background-color: #FF5722;
+  /*background-image:url();*/
+}
+/* https://kyoto.travel/en/shrine_temple/180 */
