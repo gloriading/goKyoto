@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title> BUY | KYOTO </title>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     <link rel="stylesheet" href="buy.css">
   </head>
   <body>
@@ -81,7 +80,12 @@
   const panels = document.querySelectorAll('.panel');
 
   function toggleOpen() {
+    closeAll();
     this.classList.toggle('open');
+  }
+
+  function closeAll(){
+    panels.forEach(panel => panel.classList.remove('open'));
   }
 
   function toggleActive(e) {

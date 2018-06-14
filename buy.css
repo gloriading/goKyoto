@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Viga');
+
 body, html {
     height: 100vh;
     margin: 0;
@@ -79,6 +81,8 @@ body, html {
   background-color: #f06292;
 }
 
+/* panels */
+
 .panels {
   min-height: 82vh;
   overflow: hidden;
@@ -100,14 +104,15 @@ body, html {
   font-size: 20px;
   background-size:cover;
   background-position:center;
-
 }
 .panel a {
   text-decoration: none;
   color: #ad1457;
+  transition: 0.5s;
 }
 .panel a:hover {
-  text-shadow: 0 0 2px white;
+  padding-left: 10px;
+  border-left: 10px solid #ad1457;
 }
 .panel > * {
   margin:0;
@@ -118,20 +123,34 @@ body, html {
   justify-content: center;
   align-items: center;
 }
-.panel > *:first-child { transform: translateY(-100%); }
-.panel.open-active > *:first-child { transform: translateY(0); }
-.panel > *:last-child { transform: translateY(100%); }
-.panel.open-active > *:last-child { transform: translateY(0); }
+.panel > *:first-child {
+  transform: translateY(-100%);
+}
+.panel.open-active > *:first-child {
+  transform: translateY(0);
+}
+.panel.open-active > *:nth-child(2) {
+  transform: rotate(0deg);
+  background: linear-gradient(to right, rgba(255,255,255,0.2), rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+}
+.panel > *:last-child {
+  transform: translateY(100%);
+}
+.panel.open-active > *:last-child {
+  transform: translateY(0);
+}
 
 .panel p {
   text-transform: uppercase;
-  text-shadow:0 0 4px rgba(255, 255, 255, 0.92), 0 0 14px rgba(0, 0, 0, 0.45);
   font-size: 0.5em;
-  font-family: 'Acme', sans-serif;
+  font-family: 'Viga', sans-serif;
+  background: linear-gradient(to right, rgba(255,255,255,0.2), rgba(255,255,255,0.8), rgba(255,255,255,0.2));
 }
 .panel p:nth-child(2) {
   font-size: 1.5em;
   cursor: pointer;
+  transform: rotate(90deg);
+  background: transparent;
 }
 
 .panel.open {
